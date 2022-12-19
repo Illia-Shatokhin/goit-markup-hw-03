@@ -18,11 +18,11 @@ body {
     background-color: var(--background);
 }
 
-/* Header styles */
-/*
-a {
-    text-decoration: none;
-} */
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px;
+}
 
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -42,6 +42,9 @@ a {
 
 .no-point {
     list-style: none;
+
+    padding: 0;
+    margin: 0;
 }
 
 .nav-anchor {
@@ -76,6 +79,7 @@ a {
 
 .head {
     background-color: var(--navy-blue);
+    text-align: center;
 }
 
 .first-header {
@@ -85,6 +89,10 @@ a {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--background);
+
+    margin-top: 0;
+    margin-bottom: 48px;
+    padding-top: 192px;
 }
 
 .order-button {
@@ -96,10 +104,22 @@ a {
     letter-spacing: 0.04em;
     color: var(--background);
     cursor: pointer;
+
+    border-radius: 4px;
+    padding: 16px 32px;
+    min-width: 170px;
+    text-align: center;
+    border: none;
+    margin-bottom: 192px;
 }
 
 .order-button:hover, .order-button:focus {
     background-color: var(--order-hover);
+}
+
+.features-list {
+    padding-top: 120px;
+    margin-bottom: 120px;
 }
 
 .third-header {
@@ -107,6 +127,9 @@ a {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+
+    margin-top: 0;
+    margin-bottom: 8px;
 }
 
 .text {
@@ -114,18 +137,43 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate);
+
+    margin-top: 0;
 }
 
-.second-header {
+.work-second-header {
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+
+    margin-top: 0;
+    margin-bottom: 72px;
+}
+
+.work-list {
+    margin-bottom: 120px;
 }
 
 .team {
     background-color: var(--cloud);
+    padding-top: 120px;
+}
+
+.team-second-header {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+    margin-top: 0;
+    margin-bottom: 72px;
+}
+
+.team-list {
+    padding-bottom: 120px;
 }
 
 .team-box {
@@ -134,6 +182,8 @@ a {
 
 .footer {
     background-color: var(--navy-blue);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .foot-logo {
@@ -145,6 +195,7 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--cornflower);
+    width: 264px;
 }
 
 .portfolio-button {
