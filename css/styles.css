@@ -38,6 +38,7 @@ body {
 .head-nav {
     display: flex;
     align-items: center;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 /* ----------Header---------- */
@@ -166,8 +167,14 @@ body {
 /* ----------Main Features---------- */
 
 .features-list {
+    display: flex;
+
     padding-top: 120px;
     margin-bottom: 120px;
+}
+
+.features-list-item + .features-list-item {
+    margin-left: 24px;
 }
 
 .third-header {
@@ -203,7 +210,12 @@ body {
 }
 
 .work-list {
+    display: flex;
     margin-bottom: 120px;
+}
+
+.work-list-item + .work-list-item {
+    margin-left: 24px;
 }
 
 /* ----------Main Team---------- */
@@ -225,11 +237,21 @@ body {
 }
 
 .team-list {
+    display: flex;
     padding-bottom: 120px;
+}
+
+.team-box + .team-box {
+    margin-left: 24px;
 }
 
 .team-box {
     background: var(--background);
+    text-align: center;
+}
+
+.work-image {
+    margin-bottom: 32px;
 }
 
 /* ----------Footer---------- */
@@ -252,10 +274,25 @@ body {
     width: 264px;
 }
 
-/* ----------Portgolio---------- */
+/* ----------Portfolio---------- */
 
-.portfolio-buttons-list {
+.portfolio {
+    padding-top: 96px;
+}
+
+.buttons-list {
+    display: flex;
     margin-bottom: 72px;
+    justify-content: center;
+}
+
+.button-list-item {
+    border: 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.button-list-item + .button-list-item {
+    margin-left: 24px;
 }
 
 .portfolio-button {
@@ -279,6 +316,35 @@ body {
 .portfolio-button:hover, .portfolio-button:focus {
     background-color: var(--iris);
     color: var(--background);
+}
+
+.cards-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.cards-list-item {
+    width: calc((100% - 48px) / 3);
+    margin-right: 24px;
+    margin-bottom: 48px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.cards-list-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.cards-list-item:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+
+.cards-list-item h3 {
+    margin-top: 32px;
+    margin-left: 16px;
+}
+
+.cards-list-item p {
+    margin-left: 16px;
+    margin-bottom: 32px;
 }
 
 /* ----------Also---------- */
