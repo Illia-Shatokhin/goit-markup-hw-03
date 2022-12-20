@@ -88,9 +88,12 @@ body {
     color: var(--iris);
 }
 
+.address {
+    margin-left: auto;
+}
+
 .address-list {
     display: flex;
-    margin-left: auto;
 }
 
 .address-list .nav-list-item + .nav-list-item {
