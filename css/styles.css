@@ -90,7 +90,7 @@ body {
 
 .address-list {
     display: flex;
-    margin-left: 330px;
+    margin-left: auto;
 }
 
 .address-list .nav-list-item + .nav-list-item {
