@@ -18,6 +18,15 @@ body {
     background-color: var(--background);
 }
 
+/* ----------Утиліти---------- */
+
+.no-point {
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -26,7 +35,18 @@ body {
     padding-right: 156px;
 }
 
+.head-nav {
+    display: flex;
+    align-items: center;
+}
+
+/* ----------Header---------- */
+
 .logo {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -42,14 +62,20 @@ body {
     color: var(--navy-blue);
 }
 
-.no-point {
-    list-style: none;
+.nav-list {
+    display: flex;
+    margin-left: 76px;
+}
 
-    padding: 0;
-    margin: 0;
+.nav-list .nav-list-item + .nav-list-item {
+    margin-left: 40px;
 }
 
 .nav-anchor {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
@@ -62,7 +88,20 @@ body {
     color: var(--iris);
 }
 
-.address {
+.address-list {
+    display: flex;
+    margin-left: 330px;
+}
+
+.address-list .nav-list-item + .nav-list-item {
+    margin-left: 40px;
+}
+
+.address-anchor {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    
     font-style: normal;
     font-size: 16px;
     line-height: 1.5;
@@ -75,9 +114,11 @@ body {
     text-transform: uppercase;
 }
 
-.address:hover, .address:focus {
+.address-anchor:hover, .address:focus {
     color: var(--iris)
 }
+
+/* ----------Main Head---------- */
 
 .head {
     background-color: var(--navy-blue);
@@ -85,19 +126,26 @@ body {
 }
 
 .first-header {
+    margin-top: 0;
+    margin-bottom: 48px;
+    padding-top: 192px;
+
     font-weight: 600;
     font-size: 56px;
     line-height: 1.075;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--background);
-
-    margin-top: 0;
-    margin-bottom: 48px;
-    padding-top: 192px;
 }
 
 .order-button {
+    border-radius: 4px;
+    padding: 16px 32px;
+    min-width: 170px;
+    text-align: center;
+    border: none;
+    margin-bottom: 192px;
+
     font-family: 'Roboto', sans-serif;
     background: var(--iris);
     font-weight: 600;
@@ -106,18 +154,13 @@ body {
     letter-spacing: 0.04em;
     color: var(--background);
     cursor: pointer;
-
-    border-radius: 4px;
-    padding: 16px 32px;
-    min-width: 170px;
-    text-align: center;
-    border: none;
-    margin-bottom: 192px;
 }
 
 .order-button:hover, .order-button:focus {
     background-color: var(--order-hover);
 }
+
+/* ----------Main Features---------- */
 
 .features-list {
     padding-top: 120px;
@@ -125,38 +168,42 @@ body {
 }
 
 .third-header {
+    margin-top: 0;
+    margin-bottom: 8px;
+
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-
-    margin-top: 0;
-    margin-bottom: 8px;
 }
 
 .text {
+    margin-top: 0;
+
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate);
-
-    margin-top: 0;
 }
 
+/* ----------Main Work---------- */
+
 .work-second-header {
+    margin-top: 0;
+    margin-bottom: 72px;
+
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-
-    margin-top: 0;
-    margin-bottom: 72px;
 }
 
 .work-list {
     margin-bottom: 120px;
 }
+
+/* ----------Main Team---------- */
 
 .team {
     background-color: var(--cloud);
@@ -164,14 +211,14 @@ body {
 }
 
 .team-second-header {
+    margin-top: 0;
+    margin-bottom: 72px;
+
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-
-    margin-top: 0;
-    margin-bottom: 72px;
 }
 
 .team-list {
@@ -181,6 +228,8 @@ body {
 .team-box {
     background: var(--background);
 }
+
+/* ----------Footer---------- */
 
 .footer {
     background-color: var(--navy-blue);
@@ -200,11 +249,19 @@ body {
     width: 264px;
 }
 
+/* ----------Portgolio---------- */
+
 .portfolio-buttons-list {
     margin-bottom: 72px;
 }
 
 .portfolio-button {
+    border-radius: 4px;
+    padding: 12px 24px;
+    min-width: 69px;
+    text-align: center;
+    border: none;
+
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: 16px;
@@ -214,18 +271,14 @@ body {
     color: var(--iris);
     background: var(--cloud);
     cursor: pointer;
-
-    border-radius: 4px;
-    padding: 12px 24px;
-    min-width: 69px;
-    text-align: center;
-    border: none;
 }
 
 .portfolio-button:hover, .portfolio-button:focus {
     background-color: var(--iris);
     color: var(--background);
 }
+
+/* ----------Also---------- */
 
 .visually-hidden {
     position: absolute;
