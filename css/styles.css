@@ -242,7 +242,7 @@ h1, h2, h3, ul, p {
 }
 
 .team-box {
-    margin: 32px 0;
+    padding: 32px 0;
     text-align: center;
 }
 
