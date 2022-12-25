@@ -131,9 +131,9 @@ h1, h2, h3, ul, p {
 }
 
 .hero-header {
-    margin-bottom: 48px;
+    margin: 0 auto;
     max-width: 496px;
-    align-items: center;
+    margin-bottom: 48px;
 
     font-weight: 600;
     font-size: 56px;
